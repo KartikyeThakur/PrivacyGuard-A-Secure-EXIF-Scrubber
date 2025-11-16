@@ -1,0 +1,22 @@
+{% extends "_layout.html" %}
+{% block content %}
+    <h2>My Image Vault</h2>
+    <p>Here are all the images you have scrubbed and saved.</p>
+
+    <div class="vault-gallery">
+        {% if images %}
+            {% for image in images %}
+                <div class="vault-item">
+                    <img src="{{ url_for('static', filename='uploads/' + image.saved_filename) }}" alt="{{ image.original_name }}">
+                    <p>Original name: {{ image.original_name }}</p>
+                    <div class="vault-actions">
+                        <a href="{{ url_for('download_image', filename=image.saved_filename) }}" class="button-small">Download</a>
+                        <a href="{{ url_for('traceback', image_id=image.id) }}" class="button-secondary-small">Run Traceback</a>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>Your vault is empty. <a href="{{ url_for('dashboard') }}">Upload an image</a> to get started.</p>
+        {% endif %}
+    </div>
+{% endblock content %}
