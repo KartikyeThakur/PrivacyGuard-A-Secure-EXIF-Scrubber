@@ -1,6 +1,6 @@
 
-# Repository Description:# 
-### A robust, **Python/Flask** web application designed to protect user privacy by securely stripping hidden metadata (EXIF/GPS) from digital images and providing a reverse image search tool to monitor content proliferation online.###
+# Repository Description:
+### A robust, **Python/Flask** web application designed to protect user privacy by securely stripping hidden metadata (EXIF/GPS) from digital images and providing a reverse image search tool to monitor content proliferation online.
 
 -----
 
