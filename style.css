@@ -1,0 +1,218 @@
+/* FILE: static/css/style.css */
+
+/* Basic Setup */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Header & Navigation */
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+.nav-links a:hover {
+    background-color: #555;
+}
+
+/* Forms */
+.form-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* Important! */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button, .button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+}
+button:hover, .button:hover {
+    background-color: #0056b3;
+}
+.button-secondary {
+    background-color: #6c757d;
+}
+.button-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Alerts (Flashed Messages) */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.alert-success { background-color: #d4edda; color: #155724; }
+.alert-danger { background-color: #f8d7da; color: #721c24; }
+.alert-info { background-color: #d1ecf1; color: #0c5460; }
+
+/* Report Page */
+.report-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.report-image {
+    flex: 1;
+    min-width: 300px;
+}
+.report-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.report-metadata {
+    flex: 2;
+    min-width: 400px;
+}
+.metadata-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.metadata-table th, .metadata-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    word-break: break-all;
+}
+.metadata-table th {
+    background-color: #f2f2f2;
+}
+
+/* Vault Page */
+.vault-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.vault-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.vault-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.vault-item p {
+    font-size: 0.9rem;
+    color: #555;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.vault-actions {
+    display: flex;
+    gap: 10px;
+}
+.button-small, .button-secondary-small {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    border-radius: 4px;
+    color: white;
+}
+.button-small { background-color: #007bff; }
+.button-secondary-small { background-color: #6c757d; }
+
+/* Traceback Page */
+.traceback-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.traceback-image {
+    flex: 1;
+    min-width: 300px;
+}
+.traceback-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.traceback-results {
+    flex: 2;
+    min-width: 400px;
+}
+.traceback-results ul {
+    list-style: none;
+    padding: 0;
+}
+.traceback-results li {
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+.traceback-results li a {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    color: #888;
+    border-top: 1px solid #eee;
+}
