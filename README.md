@@ -1,7 +1,7 @@
 
 ##  1. Project Overview & Core Function
 
-[cite\_start]The **PrivacyGuard** application was developed to address the dual vulnerability of metadata leakage and loss of content control[cite: 61]. [cite\_start]It functions as a comprehensive, authenticated platform where users regain control over their digital privacy[cite: 62].
+The **PrivacyGuard** application was developed to address the dual vulnerability of metadata leakage and loss of content control. It functions as a comprehensive, authenticated platform where users regain control over their digital privacy.
 
 ### What It Does
 
